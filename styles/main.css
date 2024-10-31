@@ -1,0 +1,126 @@
+/* General */
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(90deg, #ffffff 47.8%, #d9e3ef 0%);
+}
+.container {
+    max-width: 1172px;
+    width: 100%;
+    margin: 0 auto;
+}
+.main-img {
+    background-image: url(../img/women.png);
+    position: absolute;
+    top: 38px;
+    margin-left: 210px;
+    width: 968px;
+    height: 967px;
+    z-index: -1;
+    filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.07));
+}
+.header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 45px;
+}
+.left-menu {
+    display: flex;
+    gap: 63px;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin-left: -35px;
+}
+.left-menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    color: #000;
+}
+.left-menu a:hover {
+    text-decoration: underline;
+}
+.left-menu li:nth-child(1) a {
+    border: 2px solid #000;
+    padding: 9px 22px 10px 24px;
+    text-decoration: none;
+    transition: all 0.4s ease 0s;
+}
+.left-menu li:nth-child(1) a:hover {
+    color: #fff;
+    background-color: #000;
+}
+.right-menu {
+    display: flex;
+    gap: 19px;
+    justify-content: space-between;
+    align-items: center;
+}
+.heart {
+    background-image: url(../img/img-heart.svg);
+    width: 24px;
+    height: 21px;
+}
+.person {
+    background-image: url(../img/img-person.svg);
+    width: 22px;
+    height: 21px;
+}
+.cart {
+    background-image: url(../img/img-cart.svg);
+    width: 18px;
+    height: 22px;
+}
+.about {
+    margin-top: 254px;
+}
+.about h1 {
+    font-weight: 700;
+    font-size: 62px;
+    letter-spacing: 1.74px;
+    line-height: 77px;
+    color: #373737;
+    max-width: 529px;
+    margin-bottom: 85px;
+}
+.about .button {
+    padding: 24px 54px 24px 54px;
+    color: #fff;
+    background: #373737;
+    border: 1px solid #373737;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.4s ease 0s;
+}
+.button:hover {
+    color: #373737;
+    background: #fff;
+}
+@media screen and (max-width: 1600px) {
+    .main-img {
+        top: 67px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .main-img {
+        right: 0;
+        background: url(../img/women.png) no-repeat 250px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .main-img {
+        opacity: .3;
+    }
+}
